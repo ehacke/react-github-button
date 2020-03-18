@@ -1,6 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { iconStyle, disabledIconStyle, svgStyle, disabledSvgStyle } from './styles'
+import {
+  iconStyle,
+  disabledIconStyle,
+  svgStyle,
+  disabledSvgStyle
+} from './styles'
 
 const svg = (
   <svg
