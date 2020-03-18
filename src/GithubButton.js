@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { GoogleIcon } from './icons'
+import { GithubIcon } from './icons'
 import { darkStyle, lightStyle, disabledStyle, hoverStyle } from './styles'
 
-export default class GoogleButton extends PureComponent {
+export default class GithubButton extends PureComponent {
   static propTypes = {
     label: PropTypes.string,
     disabled: PropTypes.bool,
@@ -14,7 +14,7 @@ export default class GoogleButton extends PureComponent {
   }
 
   static defaultProps = {
-    label: 'Sign in with Google',
+    label: 'Sign in with Github',
     disabled: false,
     type: 'dark',
     tabIndex: 0,
@@ -66,7 +66,7 @@ export default class GoogleButton extends PureComponent {
         onMouseOver={this.mouseOver}
         onMouseOut={this.mouseOut}
       >
-        <GoogleIcon {...this.props} />
+        <GithubIcon {...this.props} />
         <span>{label}</span>
       </div>
     )

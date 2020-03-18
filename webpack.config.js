@@ -12,7 +12,7 @@ const config = {
   entry: './src/index.js',
   plugins: [
     new webpack.BannerPlugin({
-      banner: 'react-google-button.js v' + pkg.version + ' | (c) prescottprue',
+      banner: 'react-github-button.js v' + pkg.version + ' | (c) ehacke',
       raw: false,
       entryOnly: true
     })
@@ -32,10 +32,10 @@ const config = {
     }
   },
   output: {
-    filename: `react-google-button${
+    filename: `react-github-button${
       process.env.NODE_ENV === 'production' ? '.min' : ''
     }.js`,
-    library: 'ReactGoogleButton',
+    library: 'ReactGithubButton',
     libraryTarget: 'umd',
     publicPath: '/dist/'
   },

@@ -1,16 +1,16 @@
 import * as React from 'react';
 
-interface GoogleButtonProps extends React.HTMLAttributes<HTMLDivElement> {
+interface GithubButtonProps extends React.HTMLAttributes<HTMLDivElement> {
   label?: string;
   type?: "dark" | "light";
   disabled?: boolean;
 }
 
 /**
- * A React Component that renders a button that follows Google's Styleguide
+ * A React Component that renders a button that follows Github's Styleguide
  */
-declare class GoogleButton extends React.Component<GoogleButtonProps, any> {
+declare class GithubButton extends React.Component<GithubButtonProps, any> {
 
 }
 
-export default GoogleButton;
+export default GithubButton;

@@ -1,2 +1,2 @@
-export GoogleButton from './GoogleButton'
-export default from './GoogleButton'
+export GithubButton from './GithubButton'
+export default from './GithubButton'

@@ -16,7 +16,7 @@ const baseStyle = {
 }
 
 export const darkStyle = {
-  backgroundColor: '#4285f4',
+  backgroundColor: '#000000',
   color: '#fff',
   ...baseStyle
 }
@@ -30,9 +30,9 @@ export const lightStyle = {
 export const iconStyle = {
   width: '48px',
   height: '48px',
-  textAlign: 'center',
-  verticalAlign: 'center',
-  display: 'block',
+  justifyContent: 'center',
+  alignItems: 'center',
+  display: 'flex',
   marginTop: '1px',
   marginLeft: '1px',
   float: 'left',
@@ -42,9 +42,16 @@ export const iconStyle = {
 }
 
 export const svgStyle = {
-  width: '48px',
-  height: '48px',
+  width: '24px',
+  height: '24px',
   display: 'block'
+}
+
+export const disabledSvgStyle = {
+  width: '24px',
+  height: '24px',
+  display: 'block',
+  fill: 'rgba(0, 0, 0, .40)'
 }
 
 export const hoverStyle = {

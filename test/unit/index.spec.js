@@ -1,19 +1,19 @@
 import React from 'react'
-import GoogleButton from '../../src'
+import GithubButton from '../../src'
 import { shallow } from 'enzyme'
 
 const defaults = {
-  label: 'Sign in with Google',
-  backgroundColor: '#4285f4'
+  label: 'Sign in with Github',
+  backgroundColor: '#000000'
 }
 
 const disabledStyle = {
   backgroundColor: 'rgba(37, 5, 5, .08)'
 }
 
-describe('react-google-button Library', () => {
+describe('react-github-button Library', () => {
   describe('exports a component', () => {
-    expect(GoogleButton).to.exist
+    expect(GithubButton).to.exist
   })
 
   describe('Component', () => {
@@ -21,7 +21,7 @@ describe('react-google-button Library', () => {
 
     describe('Default Props', () => {
       beforeEach(() => {
-        _component = shallow(<GoogleButton />)
+        _component = shallow(<GithubButton />)
       })
       it('Renders div', () => {
         const firstDiv = _component.find('div')
@@ -46,7 +46,7 @@ describe('react-google-button Library', () => {
       const customLabel = 'Custom Label'
 
       beforeEach(() => {
-        _component = shallow(<GoogleButton label={customLabel} />)
+        _component = shallow(<GithubButton label={customLabel} />)
       })
 
       it('Renders div', () => {
@@ -62,7 +62,7 @@ describe('react-google-button Library', () => {
 
     describe('Disabled', () => {
       beforeEach(() => {
-        _component = shallow(<GoogleButton disabled />)
+        _component = shallow(<GithubButton disabled />)
       })
 
       it('Renders div', () => {
@@ -83,7 +83,7 @@ describe('react-google-button Library', () => {
       let clickSpy
       beforeEach(() => {
         clickSpy = sinon.spy()
-        _component = shallow(<GoogleButton onClick={clickSpy} />)
+        _component = shallow(<GithubButton onClick={clickSpy} />)
       })
 
       it('Calls onClick prop when clicked', () => {
@@ -94,7 +94,7 @@ describe('react-google-button Library', () => {
 
     describe('Hover', () => {
       beforeEach(() => {
-        _component = shallow(<GoogleButton />)
+        _component = shallow(<GithubButton />)
       })
 
       it('Sets hover style on hover', () => {
